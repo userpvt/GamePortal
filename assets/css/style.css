@@ -1,0 +1,546 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.2em;
+  background-color: black;
+  color: #555;
+}
+
+p {
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+input[type="text"], input[type="password"], input[type="search"] {
+  color: #5d5d5d;
+  width: 60%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+input, textarea {
+  outline: none; /*Не влияет на ширину элемента*/
+  border: none;  /*Влияет на ширину элемента*/
+  border: solid 1px #f2f2f2;
+}
+
+h1,h2 {
+  font: normal 170% 'century gothic', arial;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #000;
+}
+
+h2 {
+  font-size: 140%;
+}
+
+a, a:hover {
+  outline: none;
+  text-decoration: underline;
+  color: darkred;
+}
+
+ul {
+  margin: 2px 0 22px 17px;
+}
+
+ul li {
+  margin: 0 0 6px 0;
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;
+}
+
+.header {
+  background-color: black;
+  height: 177px;
+  font-size: 0.8em;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  min-width: 1200px;
+}
+
+.main, .logo, .menubar, .site_content, .footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 880px;
+  padding-bottom: 40px;
+}
+
+.logo h1, .logo h2 {
+  font: normal 300% 'century gothic', arial, sans-serif;
+  margin: 0 0 0 9px;
+}
+
+.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
+  padding: 22px 0 0 0;
+  color: aqua;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.logo_text h2 {
+  font-size: 0.9em;
+  padding: 4px 0 0 0;
+  color: #999;
+}
+
+.menubar {
+  width: 900px;
+  height: 46px;
+}
+
+ul.menu {
+  float: right;
+}
+
+ul.menu li {
+  float: left;
+  padding: 0 0 0 9px;
+  list-style: none;
+  margin: 1px 2px 0 0;
+}
+
+ul.menu li a {
+  font: normal 100% 'trebuchet ms', sans-serif;
+  display: block;
+  height: 20px;
+  padding: 6px 35px 5px 28px;
+  color: white;
+  text-decoration: none;
+}
+
+ul.menu li.selected a {
+  color: yellow;
+}
+
+ul.menu li a:hover {
+  color: red;
+}
+
+hr {
+  border: solid 1px #f3f3f3;
+
+}
+
+.site_content {
+  width: 950px;
+  overflow: hidden; /*Скрыть то что вылезло из рамзмера*/
+  margin: 20px auto 0 auto;
+  background-color: black;
+}
+
+.sidebar_container {
+  float: right;
+  width: 222px;
+}
+
+.sidebar {
+  float: right;
+  width: 222px;
+  padding: 5%;
+  margin: 0 0 10px 0;
+  border: solid 1px white; /*Рамка вокруг дива , цвет ,толщина и тд*/
+  border-radius: 2px; /*Углы рамки , закруглить или сделать прямыми*/
+  background-color: black;
+  color: white;
+}
+
+.sidebar input[type="submit"]{
+  background-color: darkred;
+  padding: 3%;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 8px;
+  background-color: white;
+  cursor: pointer; /*Когда наводишь на ссылку меняется на палец*/
+}
+
+.sidebar h2 {
+  color: plum;
+}
+
+.lables_passreg_text {
+  font-size: 0.7em;
+  margin-top: 3%;
+  margin-left: 2%
+}
+
+.sidebar ul {
+  margin: 0;
+}
+
+.sidebar ul li {
+  list-style-type: none;
+  margin: 0 0 0;
+}
+
+.sidebar .rating_sidebar {
+  float: right;
+  color: white;
+}
+
+.content {
+  text-align: left;
+  width: 620px;
+  padding: 0 0 0 5px;
+  float: left;
+}
+
+.content a {
+  text-decoration: none;
+  color: plum;
+}
+
+.content h1 {
+  color: white;
+}
+
+.content h2 {
+  color: white;
+}
+
+.content h3 {
+  color: aqua;
+}
+
+.content .description_game {
+  color: lightblue;
+}
+
+.content .label {
+  color: grey;
+}
+
+.game_block {
+  margin-bottom: 5%;
+}
+
+.game_block img {
+  border-radius: 5px;
+  border: solid 5px silver;
+  width: 22%;
+}
+
+.posts .posts_content{
+  font-size: 0.8em;
+  color: lightblue;
+}
+
+.info_game_page {
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.info_game_page .label {
+  font-size: 1.2em;
+}
+
+.info_game_page .value {
+  font-size: 1em;
+  color: green;
+  margin-right: 3%;
+}
+
+.description_game {
+  margin-bottom: 15%;
+}
+
+.description_game img {
+  float: left;
+  margin-right: 2%;
+  border-radius: 5px;
+  border: solid 5px silver;
+}
+
+.reviews {
+  margin-bottom: 4%;
+  font-size: 0.9em;
+  color: silver;
+}
+
+.reviews .review_name {
+  background-color: brown;
+  color: white;
+  padding: 1%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.reviews .review_text {
+  padding-top: 2%;
+  bottom: 2%;
+  padding-left: 2%;
+}
+
+.send {
+  margin-bottom: 4%;
+}
+
+.send input[type="text"], textarea {
+  border: solid 1px #C3C3C3;
+  margin-bottom: 2%;
+}
+
+.send input[type="text"]{
+  width: 98%;
+}
+
+.send textarea {
+  width: 624px;
+  height: 200px;
+}
+
+.send input[type="submit"]{
+  background-color: darkred;
+  padding: 3%;
+  color: white;
+  border-radius: 5px;
+}
+
+.info_xbox {
+  margin-bottom: 5%;
+  background-color: grey;
+  padding: 5%;
+  height: 270px;
+  color: white;
+
+}
+
+.info_xbox img {
+  float: left;
+  margin-right: 2%;
+  border-radius: 5px;
+  border: solid 5px darkred;
+  width: 25%;
+}
+
+.button {
+  background-color: darkred;
+  padding: 2%;
+  border-radius: 5px;
+  float: right;
+  margin-top: 5%;
+  clear: both;/* Задаёт место для кнопки */
+  font-size: 0.8em;
+}
+
+.button a {
+  color: white;
+}
+
+table {
+  width: 100%;
+  border: solid 1px #f4f4f4;
+}
+
+td {
+  padding: 2%;
+  border: solid 1px #f4f4f4;
+  color: aqua;
+}
+
+td img {
+  width: 60px;
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+th {
+  color: aqua;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  padding: 28px 0 5px 0;
+  text-align: center;
+  background-color: black;
+  color: #a8aa94;
+  margin-left: 0px;
+  margin-right: 0px;
+  min-width: 900px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.footer p {
+  padding: 0 0 10px 0;
+}
+
+/*CSS Mobile*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+  .header {
+    background-color: #5d1919;
+    min-width: 100%;
+    height: 20%;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .site_content {
+    width: 100%;
+  }
+
+  .menubar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site_content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sidebar_container {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  ul.menu {
+    float: none;
+  }
+
+  ul.menu li {
+    margin: 0;
+    padding: 0;
+    float: none;
+  }
+
+  .logo h1 {
+    font: normal 235% 'century gothic', arial, sans-serif;
+  }
+
+  .logo h2 {
+    font: normal 100% 'century gothic', arial, sans-serif;
+    color: silver;
+  }
+
+  .content h1, h2 {
+    font: normal 110% 'century gothic', arial;
+    color: plum;
+  }
+
+  .game_block img {
+      width: 43%;
+  }
+
+  .posts_content p {
+    line-height: 1.5em;
+    padding: 3%;
+    text-align: left;
+  }
+
+  .posts p {
+    font-size: 120%;
+  }
+
+  /*Xbox page*/
+
+  .info_xbox {
+    float: none;
+    height: 100%;
+  }
+
+  .info_xbox img {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+
+  .button {
+    float: none;
+  }
+
+  /*Rating page*/
+
+  table {
+    display: block;
+  }
+
+  th {
+    font-size: 75%;
+  }
+
+  td {
+    padding: 0;
+    margin: 0;
+    font-size: 95%;
+    text-align: left;
+  }
+
+  /*Cyberpunk page*/
+
+  iframe {
+    width: 88%;
+    height: 100%;
+  }
+
+  .description_game {
+    width: 90%;
+    text-align: left;
+    margin: 2%;
+  }
+
+  .description_game img {
+    float: none;
+    width: 73%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: 11%;
+    margin-bottom: 7%;
+  }
+
+  .reviews {
+    text-align: left;
+    width: 96%;
+  }
+
+  .send input[type="text"] {
+    width: 80%;
+  }
+
+  .send textarea {
+    width: 85%;
+  }
+}
